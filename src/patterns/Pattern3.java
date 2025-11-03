@@ -8,13 +8,26 @@ public class Pattern3
     {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        printPattern3(n);
+        //printPattern3(n);
+        printingPattern3(n);
     }
     static void printPattern3(int n)
     {
         for(int r = n ; r >= 1 ; r--)
         {
             for(int c = 1 ; c <= r ; c++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void printingPattern3(int n)
+    {
+        for(int r = 1 ; r <= n ; r++)
+        {
+            for(int c = 1 ; c <= n - r + 1 ; c++)
             {
                 System.out.print("* ");
             }
