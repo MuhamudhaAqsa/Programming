@@ -9,9 +9,9 @@ public class Pattern21
     {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        printpattern21(n);
+        printPattern21(n);
     }
-    static void printpattern21(int n)
+    static void printPattern21(int n)
     {
         int num = 1;
         for(int r = 1 ; r <= n ; r++)
